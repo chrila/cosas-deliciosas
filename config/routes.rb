@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :beers
+  resources :beer_styles
+  resources :breweries
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions'

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place: MyString
+  rating: 9.99
+  price: 9.99
+  serving_format: one
+  comment: MyText
+  beer: one
+
+two:
+  place: MyString
+  rating: 9.99
+  price: 9.99
+  serving_format: two
+  comment: MyText
+  beer: two

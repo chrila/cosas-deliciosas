@@ -1,0 +1,2 @@
+class ServingFormat < ApplicationRecord
+end

@@ -1,0 +1,47 @@
+<%= form_with(model: tasting) do |form| %>
+  <% if tasting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tasting.errors.count, "error") %> prohibited this tasting from being saved:</h2>
+
+      <ul>
+        <% tasting.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :place %>
+    <%= form.text_field :place %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.text_field :rating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :serving_format_id %>
+    <%= form.text_field :serving_format_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beer_id %>
+    <%= form.text_field :beer_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

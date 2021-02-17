@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Serving Formats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @serving_formats.each do |serving_format| %>
+      <tr>
+        <td><%= serving_format.name %></td>
+        <td><%= link_to 'Show', serving_format %></td>
+        <td><%= link_to 'Edit', edit_serving_format_path(serving_format) %></td>
+        <td><%= link_to 'Destroy', serving_format, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Serving Format', new_serving_format_path %>

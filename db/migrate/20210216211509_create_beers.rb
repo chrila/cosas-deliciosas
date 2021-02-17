@@ -5,6 +5,7 @@ class CreateBeers < ActiveRecord::Migration[6.1]
       t.belongs_to :beer_style, null: false, foreign_key: true
       t.integer :ibu
       t.decimal :abv
+      t.string :name
 
       t.timestamps
     end

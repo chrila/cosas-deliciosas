@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
     <%= form.label :beer_style_id %>
     <%= form.select :beer_style_id, beer_styles_for_select %>
   </div>

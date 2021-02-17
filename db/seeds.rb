@@ -11,5 +11,5 @@ end
 50.times do
   style = BeerStyle.find_by(id: rand(1..BeerStyle.last.id))
   brewery = Brewery.find_by(id: rand(1..Brewery.last.id))
-  Beer.create(brewery: brewery, beer_style: style, ibu: rand(10..100), abv: (rand(40..80)*0.1).round(1))
+  Beer.create(brewery: brewery, name: Faker::Beer.unique.name, beer_style: style, ibu: rand(10..100), abv: (rand(40..80)*0.1).round(1))
 end

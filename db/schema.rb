@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_02_16_211509) do
     t.bigint "beer_style_id", null: false
     t.integer "ibu"
     t.decimal "abv"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["beer_style_id"], name: "index_beers_on_beer_style_id"

@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Brewery</th>
+      <th>Name</th>
       <th>Beer style</th>
       <th>IBU</th>
       <th>ABV [%]</th>
@@ -15,6 +16,7 @@
     <% @beers.each do |beer| %>
       <tr>
         <td><%= beer.brewery %></td>
+        <td><%= beer.name %></td>
         <td><%= beer.beer_style %></td>
         <td><%= beer.ibu %></td>
         <td><%= beer.abv %></td>

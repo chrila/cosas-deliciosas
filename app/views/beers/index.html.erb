@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Beers</h1>
 
 <table>
@@ -7,8 +5,8 @@
     <tr>
       <th>Brewery</th>
       <th>Beer style</th>
-      <th>Ibu</th>
-      <th>Abv</th>
+      <th>IBU</th>
+      <th>ABV [%]</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +14,8 @@
   <tbody>
     <% @beers.each do |beer| %>
       <tr>
-        <td><%= beer.brewery_id %></td>
-        <td><%= beer.beer_style_id %></td>
+        <td><%= beer.brewery %></td>
+        <td><%= beer.beer_style %></td>
         <td><%= beer.ibu %></td>
         <td><%= beer.abv %></td>
         <td><%= link_to 'Show', beer %></td>

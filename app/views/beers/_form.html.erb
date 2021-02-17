@@ -13,22 +13,22 @@
 
   <div class="field">
     <%= form.label :brewery_id %>
-    <%= form.text_field :brewery_id %>
+    <%= form.select :brewery_id, breweries_for_select %>
   </div>
 
   <div class="field">
     <%= form.label :beer_style_id %>
-    <%= form.text_field :beer_style_id %>
+    <%= form.select :beer_style_id, beer_styles_for_select %>
   </div>
 
   <div class="field">
-    <%= form.label :ibu %>
+    <%= form.label :ibu, 'IBU' %>
     <%= form.number_field :ibu %>
   </div>
 
   <div class="field">
-    <%= form.label :abv %>
-    <%= form.text_field :abv %>
+    <%= form.label :abv, 'ABV [%]' %>
+    <%= form.number_field :abv, step: 0.1 %>
   </div>
 
   <div class="actions">

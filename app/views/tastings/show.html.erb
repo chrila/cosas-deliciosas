@@ -1,8 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Beer:</strong>
+  <%= @tasting.beer %>
+</p>
+
+<p>
   <strong>Place:</strong>
   <%= @tasting.place %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency(@tasting.price, unit: @tasting.currency) %>
+</p>
+
+<p>
+  <strong>Serving format:</strong>
+  <%= @tasting.serving_format %>
 </p>
 
 <p>
@@ -11,23 +26,8 @@
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @tasting.price %>
-</p>
-
-<p>
-  <strong>Serving format:</strong>
-  <%= @tasting.serving_format_id %>
-</p>
-
-<p>
   <strong>Comment:</strong>
   <%= @tasting.comment %>
-</p>
-
-<p>
-  <strong>Beer:</strong>
-  <%= @tasting.beer_id %>
 </p>
 
 <%= link_to 'Edit', edit_tasting_path(@tasting) %> |

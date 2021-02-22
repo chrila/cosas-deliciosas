@@ -3,6 +3,10 @@ class Beer < ApplicationRecord
   belongs_to :beer_style
 
   def abv_str
-    "#{self.abv} %"
+    "#{abv} %"
+  end
+
+  def to_s
+    "#{brewery} #{name}"
   end
 end

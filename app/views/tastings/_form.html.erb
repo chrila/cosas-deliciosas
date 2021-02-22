@@ -12,13 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :place %>
-    <%= form.text_field :place %>
+    <%= form.label :beer_id %>
+    <%= form.select :beer_id, beers_for_select %>
   </div>
 
   <div class="field">
-    <%= form.label :rating %>
-    <%= form.text_field :rating %>
+    <%= form.label :place %>
+    <%= form.text_field :place %>
   </div>
 
   <div class="field">
@@ -27,18 +27,23 @@
   </div>
 
   <div class="field">
+    <%= form.label :currency_id %>
+    <%= form.select :currency_id, currencies_for_select %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.text_field :rating %>
+  </div>
+
+  <div class="field">
     <%= form.label :serving_format_id %>
-    <%= form.text_field :serving_format_id %>
+    <%= form.select :serving_format_id, serving_formats_for_select %>
   </div>
 
   <div class="field">
     <%= form.label :comment %>
     <%= form.text_area :comment %>
-  </div>
-
-  <div class="field">
-    <%= form.label :beer_id %>
-    <%= form.text_field :beer_id %>
   </div>
 
   <div class="actions">

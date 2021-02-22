@@ -19,11 +19,11 @@
     <% @tastings.each do |tasting| %>
       <tr>
         <td><%= tasting.place %></td>
-        <td><%= tasting.rating %></td>
-        <td><%= tasting.price %></td>
-        <td><%= tasting.serving_format_id %></td>
+        <td><%= tasting.rating_str %></td>
+        <td><%= number_to_currency(tasting.price, unit: tasting.currency) %></td>
+        <td><%= tasting.serving_format %></td>
         <td><%= tasting.comment %></td>
-        <td><%= tasting.beer_id %></td>
+        <td><%= tasting.beer %></td>
         <td><%= link_to 'Show', tasting %></td>
         <td><%= link_to 'Edit', edit_tasting_path(tasting) %></td>
         <td><%= link_to 'Destroy', tasting, method: :delete, data: { confirm: 'Are you sure?' } %></td>

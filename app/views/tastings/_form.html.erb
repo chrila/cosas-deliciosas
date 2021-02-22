@@ -11,42 +11,42 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :beer_id %>
-    <%= form.select :beer_id, beers_for_select %>
+    <%= form.select :beer_id, beers_for_select, {}, class: "custom-select" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :place %>
-    <%= form.text_field :place %>
+    <%= form.text_field :place, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :currency_id %>
-    <%= form.select :currency_id, currencies_for_select %>
+    <%= form.select :currency_id, currencies_for_select, {}, class: "custom-select" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :rating %>
-    <%= form.text_field :rating %>
+    <%= form.text_field :rating, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :serving_format_id %>
-    <%= form.select :serving_format_id, serving_formats_for_select %>
+    <%= form.select :serving_format_id, serving_formats_for_select, {}, class: "custom-select" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :comment %>
-    <%= form.text_area :comment %>
+    <%= form.text_area :comment, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Beer:</strong>
   <%= @tasting.beer %>
@@ -30,5 +28,7 @@
   <%= @tasting.comment %>
 </p>
 
-<%= link_to 'Edit', edit_tasting_path(@tasting) %> |
-<%= link_to 'Back', tastings_path %>
+<div class="form-inline">
+  <%= button_to 'Edit', edit_tasting_path(@tasting), class: "btn btn-primary mr-2", method: :get %>
+  <%= button_to 'Back', tastings_path, class: "btn btn-secondary", method: :get %>
+</div>

@@ -1,13 +1,13 @@
 <h1>Beers</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
-      <th>Brewery</th>
-      <th>Name</th>
-      <th>Beer style</th>
-      <th>IBU</th>
-      <th>ABV [%]</th>
+      <th scope="col">Brewery</th>
+      <th scope="col">Name</th>
+      <th scope="col">Beer style</th>
+      <th scope="col">IBU</th>
+      <th scope="col">ABV [%]</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Beer', new_beer_path %>
+<%= button_to 'New Beer', new_beer_path, class: "btn btn-primary", method: :get %>

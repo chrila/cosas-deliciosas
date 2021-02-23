@@ -23,5 +23,7 @@
   <%= @beer.abv_str %>
 </p>
 
-<%= link_to 'Edit', edit_beer_path(@beer) %> |
-<%= link_to 'Back', beers_path %>
+<div class="form-inline">
+  <%= button_to 'Edit', edit_beer_path(@beer), class: "btn btn-primary mr-2", method: :get %>
+  <%= button_to 'Back', beers_path, class: "btn btn-secondary", method: :get %>
+</div>

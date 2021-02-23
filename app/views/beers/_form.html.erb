@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :brewery_id %>
-    <%= form.select :brewery_id, breweries_for_select %>
+    <%= form.select :brewery_id, breweries_for_select, {}, class: "custom-select" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :beer_style_id %>
-    <%= form.select :beer_style_id, beer_styles_for_select %>
+    <%= form.select :beer_style_id, beer_styles_for_select, {}, class: "custom-select" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :ibu, 'IBU' %>
-    <%= form.number_field :ibu %>
+    <%= form.number_field :ibu, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :abv, 'ABV [%]' %>
-    <%= form.number_field :abv, step: 0.1 %>
+    <%= form.number_field :abv, step: 0.1, class: "form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions form-group">
+    <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -3,5 +3,7 @@
   <%= @beer_style.name %>
 </p>
 
-<%= link_to 'Edit', edit_beer_style_path(@beer_style) %> |
-<%= link_to 'Back', beer_styles_path %>
+<div class="form-inline">
+  <%= button_to 'Edit', edit_beer_style_path(@beer_style), class: "btn btn-primary mr-2", method: :get %>
+  <%= button_to 'Back', beer_styles_path, class: "btn btn-secondary", method: :get %>
+</div>

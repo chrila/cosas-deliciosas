@@ -1,9 +1,9 @@
 <h1>Beer Styles</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
-      <th>Name</th>
+      <th scope="col">Name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Beer Style', new_beer_style_path %>
+<%= button_to 'New Beer Style', new_beer_style_path, class: "btn btn-primary", method: :get %>

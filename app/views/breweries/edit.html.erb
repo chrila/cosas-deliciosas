@@ -2,5 +2,7 @@
 
 <%= render 'form', brewery: @brewery %>
 
-<%= link_to 'Show', @brewery %> |
-<%= link_to 'Back', breweries_path %>
+<div class="form-inline">
+  <%= button_to 'Show', @brewery, class: "btn btn-secondary mr-2", method: :get %>
+  <%= button_to 'Back', breweries_path, class: "btn btn-secondary", method: :get %>
+</div>

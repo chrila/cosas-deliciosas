@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     sessions: 'users/sessions'
   }
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
+  root 'tastings#index'
 end

@@ -2,5 +2,7 @@
 
 <%= render 'form', serving_format: @serving_format %>
 
-<%= link_to 'Show', @serving_format %> |
-<%= link_to 'Back', serving_formats_path %>
+<div class="form-inline">
+  <%= button_to 'Show', @serving_format, class: "btn btn-secondary mr-2", method: :get %>
+  <%= button_to 'Back', serving_formats_path, class: "btn btn-secondary", method: :get %>
+</div>

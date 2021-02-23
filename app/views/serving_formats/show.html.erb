@@ -1,9 +1,9 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name:</strong>
   <%= @serving_format.name %>
 </p>
 
-<%= link_to 'Edit', edit_serving_format_path(@serving_format) %> |
-<%= link_to 'Back', serving_formats_path %>
+<div class="form-inline">
+  <%= button_to 'Edit', edit_serving_format_path(@serving_format), class: "btn btn-primary mr-2", method: :get %>
+  <%= button_to 'Back', serving_formats_path, class: "btn btn-secondary", method: :get %>
+</div>

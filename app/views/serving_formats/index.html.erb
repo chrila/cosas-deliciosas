@@ -1,11 +1,9 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Serving Formats</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
-      <th>Name</th>
+      <th scope="col">Name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Serving Format', new_serving_format_path %>
+<%= button_to 'New Serving Format', new_serving_format_path, class: "btn btn-primary", method: :get %>

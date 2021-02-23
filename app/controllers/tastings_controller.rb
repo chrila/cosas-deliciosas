@@ -64,6 +64,6 @@ class TastingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tasting_params
-      params.require(:tasting).permit(:place, :rating, :price, :serving_format_id, :comment, :beer_id)
+      params.require(:tasting).permit(:place, :rating, :price, :serving_format_id, :comment, :beer_id, :currency_id)
     end
 end
